@@ -1,0 +1,29 @@
+
+<html>
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+   <button class="tablink" id="devTool">Dev Tools</button>
+   <button class="tablink" id="apiTool">Api Tool</button>
+   <div id="devToolDiv" class="tabcontent">
+      <p>Separator</p>
+      <textarea id="input" class="inputcss" placeholder="Enter Target String...."></textarea>
+      <input class="fields" type="text" id="findField" placeholder="Find Regex">
+      <input class="fields" type="text" id="replaceField" placeholder="Replace Value"><br>
+      <div class="leftAlign">
+         <input type="checkbox" id="replaceNewLine"> <label>Replace with New Line</label>
+      </div>
+      <br>
+      <button class="btncss" id="compute">Compute</button>
+      <textarea readonly id="outputField" class=inputcss></textarea>
+   </div>
+
+   <div id="apiToolDiv" class="tabcontent">
+      <h3>API Tool</h3>
+      <p>Make any Request.</p>
+   </div>
+   <script src="jquery.js"></script>
+   <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Network Hijacker</title>
+    </head>
+    <body>
+        <h2>Network Hijacker</h2>
+        
+        <div class="toggle-container">
+            <p style="margin-top:7px;">Hijack Network Calls</p> 
+            <input type="checkbox" id="switch" class="checkbox" />
+            <label for="switch" class="toggle"></label>
+        </div>
+        <div class="input-w">
+            <label style="font-weight: bold;">Match Regex</label>
+            <input type="text" id="regexValue" style="float: right;"/>
+        </div>
+        <table class="requestlist-container" id="requestList">
+            <tr class=table-header>
+                <th style="width:5%"> SNo.</th>
+                <th style="width:10%">Method</th>
+                <th>Url</th>
+            </tr>
+        </table>
+        <link rel="stylesheet" href="style.css">
+            <script src="queue.js"></script>
+        <script src="settings.js"></script>
+        <script src="popup.js"></script>
+    </body>
+</html>
+
+

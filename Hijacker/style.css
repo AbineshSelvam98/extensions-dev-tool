@@ -1,0 +1,95 @@
+body{
+    min-width: 750px;
+}
+h2{
+    background-color: green;
+    color: white;
+    padding: 4px;
+    text-align: center;
+}
+.toggle-container p{
+    float:left;
+}
+
+.toggle-container {
+     margin-top: -1rem;
+}
+        
+/* toggle in label designing */
+.toggle {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    background-color:grey;
+    border-radius: 10%;
+    top: 7px;
+    float: right;
+}
+        
+/* After slide changes */
+.toggle:after {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 10%;
+    background-color: white;
+    top: 3px;
+    left: 3px;
+    transition: all 0.5s;
+}
+        
+/* Toggle text */
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+        
+/* Checkbox cheked effect */
+.checkbox:checked + .toggle::after {
+    left : 23px; 
+}
+        
+/* Checkbox cheked toggle label bg color */
+.checkbox:checked + .toggle {
+    background-color: green;
+}
+        
+/* Checkbox vanished */
+.checkbox { 
+    display : none;
+}
+
+.requestlist-container
+{
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    table-layout: fixed;    
+    border-collapse: collapse;
+}
+
+.table-header
+{
+    color: white;
+    font-size: 16px;
+    background-color: green;
+    padding: 3px;
+}
+
+th, td
+{
+    border-bottom: 1px solid #ddd;
+    height: 2rem;
+}
+
+
+.input-w 
+{
+    margin-top: 2rem;
+}
+
+tr:not(:first-child):hover
+{
+    background-color:#f5f5f5;
+}

@@ -1,0 +1,58 @@
+body { 
+   height: 100%;
+   margin: 0;
+   min-width: 350px;
+   background-color: gray;
+}
+
+
+.tablink {
+   background-color: #555;
+   color: white;
+   float: left;
+   padding: 10px 12px;
+   font-size: 15px;
+   width: 50%;
+   border: none;
+   outline-width: 3px;
+   box-shadow: darkgreen;
+   outline: none;
+}
+.tablink:hover {
+   background-color: black;
+}
+.tabcontent {
+   color: white;
+   display: none;
+   background-color: gray; 
+   min-height: 550px;
+   text-align: center;
+   font-size: 20px;
+}
+
+.inputcss {
+   margin-top: 10px;
+   min-width: 80%;
+   min-height: 25%;
+   font-size: 14px; 
+}
+
+.fields{
+   margin-top: 10px;
+   padding: 10px 14px;
+}
+
+.btncss{
+   margin-top: 5px;
+   padding: 10px 20px;
+   background: green;
+   border: none;
+   float:inherit;
+   color:white;
+}
+.leftAlign{
+   float: left;
+   margin-left: 175px;
+   margin-top: 1px;
+   font-size: 13px;
+}

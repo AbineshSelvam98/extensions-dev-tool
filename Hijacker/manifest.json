@@ -1,0 +1,27 @@
+{
+    "name": "Network Hijacker",
+    "version": "0.0",
+    "manifest_version": 2,
+    "icons":{
+        "16":"/images/Logo/dev16.png",
+        "32":"/images/Logo/dev32.png",
+        "48":"/images/Logo/dev48.png",
+        "128":"/images/Logo/dev128.png"
+    },
+    "browser_action":{
+        "default_popup": "popup.html",
+        "default_icon": "/images/Logo/dev16.png"
+    },
+
+    "background":{
+        "scripts":["queue.js", "request.js", "hijack.js"]
+    },  
+
+    "content_scripts":[
+        {
+            "matches": ["<all_urls>"],
+            "js": ["app.js"]
+        }
+    ],
+    "permissions":["webRequest",  "webRequestBlocking", "tabs", "<all_urls>"]
+}
